@@ -24,6 +24,7 @@ cd ../..
 ```
 
 ## Install custom CuPy
+On a node that is equipped with a GPU
 ```bash
 git clone https://github.com/enp1s0/cupy --recursive -b 1-fp16tcec_available
 cd cupy
