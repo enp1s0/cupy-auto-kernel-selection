@@ -2,7 +2,8 @@
 
 ## Install required Python packages using pip
 ```bash
-git clone cupy-auto-kernel-selection
+git clone https://github.com/enp1s0/cupy-auto-kernel-selection
+cd cupy-auto-kernel-selection
 pip install -r requirements.txt
 ```
 
@@ -18,7 +19,7 @@ export CUMPSGEMM_PATH=$(pwd)/libcumpsgemm.so
 echo "Append a path ${CUMPSGEMM_PATH} to an environmental variable LD_PRELOAD"
 export LD_PRELOAD=$CUMPSGEMM_PATH:$LD_PRELOAD
 cd ../python
-python setup install
+python setup.py install
 cd ../..
 ```
 
