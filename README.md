@@ -40,7 +40,7 @@ cd ..
 import cumpsgemm_hijack_control as chc
 
 chc.enable_exp_stats()
-# ([ignore_threshold, lost_threshold])
+# arg = (ignore_threshold, lost_threshold)
 chc.set_exp_stats_params(1 / (2**50), 1 / (2**20))
 chc.set_global_lost_ratio_threshold(0.1)
 ```
