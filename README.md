@@ -1,5 +1,7 @@
 # How to setup automatic kernele selection enabled cupy
 
+Before starting the following instructions, activate your Python environment such as `pyenv virtualenv`.
+
 ## Install required Python packages using pip
 ```bash
 git clone https://github.com/enp1s0/cupy-auto-kernel-selection
