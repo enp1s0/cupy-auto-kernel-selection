@@ -29,5 +29,16 @@ On a node that is equipped with a GPU
 git clone https://github.com/enp1s0/cupy --recursive -b 1-fp16tcec_available
 cd cupy
 python setup.py install
-cd ../..
+cd ..
+```
+
+## Source code preparation
+
+```python
+import cumpsgemm_hijack_control as chc
+
+chc.enable_exp_stats()
+# ([ignore_threshold, lost_threshold])
+chc.set_exp_stats_params(1 / (2**50), 1 / (2**20))
+chc.set_global_lost_ratio_threshold(0.1)
 ```
